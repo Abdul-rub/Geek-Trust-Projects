@@ -1,0 +1,36 @@
+.filter_box {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.filter_box>div>p {
+    width: 100%;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.2rem 0rem;
+}
+
+.filter_box>div {
+    width: 90%;
+    text-align: start;
+    padding: 0.5rem;
+    margin: auto;
+    line-height: 25px;
+
+}
+input[type="checkbox"] {
+    border: none;
+    width: 2.5vh;
+    height: 2.5vh;
+  }
+.input_checkbox_box>input[type="checkbox"] {
+    cursor: pointer;
+}

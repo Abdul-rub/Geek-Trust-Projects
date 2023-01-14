@@ -1,0 +1,65 @@
+.card-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  border: 2px solid green;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  text-align: center;
+  margin: 10px;
+  height: 470px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+
+/* Add to Cart button */
+
+.card .add-to-cart-btn {
+  width: 40%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.card .add-to-cart-btn:hover {
+  background-color: #fc1d0d;
+}
+
+.price_div{
+    display: flex;
+    justify-content: space-around;
+}

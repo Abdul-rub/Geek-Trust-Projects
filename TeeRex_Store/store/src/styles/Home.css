@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    /* border: 2px solid black; */
+}
+
+.filter{
+ width: 25%;
+ /* border: 2px solid red; */
+}
+
+.prod{
+ width: 75%;
+ /* border: 2px solid teal; */
+}
