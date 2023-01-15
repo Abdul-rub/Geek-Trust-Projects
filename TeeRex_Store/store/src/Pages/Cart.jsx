@@ -3,7 +3,7 @@ import { DataFetchingContext } from "../Context/Reducer";
 import "../styles/Cart.css";
 
 const Cart = () => {
-  const { state,increaseQuantity, decreaseQuantity, DeleteItem} = useContext(DataFetchingContext);
+  const { state,increaseQuantity, decreaseQuantity, DeleteItem,dispatch} = useContext(DataFetchingContext);
 
 
 
@@ -19,11 +19,11 @@ const Cart = () => {
           <h2>{item.name}</h2>
           <h2>Rs{item.price}</h2>
           <div>
-            <button onClick={() => decreaseQuantity(item)}>-</button>
+            <button onClick={() => decreaseQuantity(item,dispatch)}>-</button>
             <span>{item.quantity}</span>
-            <button onClick={() => increaseQuantity(item)}>+</button>
+            <button onClick={() => increaseQuantity(item,dispatch)}>+</button>
           </div>
-          <button onClick={() => DeleteItem(item)}>Delete</button>
+          <button onClick={() => DeleteItem(item,dispatch)}>Delete</button>
         </div>
       ))}
       <div className="total">
